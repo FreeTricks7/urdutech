@@ -1,0 +1,12 @@
+Snacker is a powerful Snack video downloader app with extendable features. With Snacker you can download videos without watermark in different qualities. Complete features mentioned here:
+
+1:- Simple user interface, easy to use
+2:- Download any Snack video without a watermark
+3:- Download video, in multiple qualities
+4:- Download multiple videos at the same time
+5:- Fast speed downloads with retry functionality
+6:- Easily pause, resume, cancel or delete downloads
+7:- Download notification alerts
+8-: Watch and share downloaded videos with friends with a single tap
+
+If you have any questions, concerns or suggestions you can tell us in the review section of the Google Play Store.

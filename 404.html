@@ -1,15 +1,32 @@
-!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url="https://urdutech.xyz">
-        <script type="text/javascript">
-            window.location.href = "https://urdutech.xyz"
-        </script>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow this <a href='https://play.google.com/store/apps/details?id=com.pakistan.mobilesworld'>link to Google Play.
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get URL Parameters</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Function to get URL parameters by name
+        function getUrlParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Get the 'param' parameter from the URL
+        const paramValue = getUrlParam('param');
+
+        // Check if the parameter exists
+        if (paramValue !== null) {
+            // Set the parameter value as the body text of the 'output' div
+            const outputDiv = document.getElementById('output');
+            outputDiv.textContent = 'Parameter Value: ' + paramValue;
+        } else {
+            // Handle the case when the parameter is not present in the URL
+            const outputDiv = document.getElementById('output');
+            outputDiv.textContent = 'Parameter not found in the URL.';
+        }
+    </script>
+</body>
 </html>
+

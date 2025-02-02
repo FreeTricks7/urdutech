@@ -8,21 +8,30 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
+            margin: 0;
             background-color: #f9f9f9;
             color: #333;
-        }
-        h1, h2 {
-            color: #2c3e50;
         }
         .container {
             max-width: 800px;
             margin: auto;
             background: white;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px; /* Added small padding around the container */
+        }
+        h1, h2 {
+            color: #2c3e50;
+            padding: 10px;
+            margin: 0;
+        }
+        p, ul {
+            padding: 10px;
+            margin: 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 30px;
         }
         a {
             color: #3498db;
@@ -32,17 +41,16 @@
             text-decoration: underline;
         }
         footer {
-            margin-top: 20px;
             text-align: center;
             font-size: 14px;
             color: #777;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> [Insert Date]</p>
 
         <h2>1. Introduction</h2>
         <p>Mini-Player ("we," "our," or "us") is a simple media player that allows users to stream videos from network links and play locally stored videos. This Privacy Policy explains how we handle your data when you use our app.</p>
@@ -56,16 +64,22 @@
         <p>- If you choose to play videos from your device, the app requires access to your storage to list and play selected files.</p>
         <p>- We do not collect, transmit, or store any personal files.</p>
 
+        <h3>c. Analytics and Advertising</h3>
+        <p>- We may use third-party analytics services to understand app usage and improve performance.</p>
+        <p>- Our app may display ads, and advertising partners may collect anonymized data to serve relevant ads.</p>
+
         <h2>3. How We Use Your Information</h2>
         <p>We use the collected data to:</p>
         <ul>
             <li>Provide core app functionality (streaming and playing videos).</li>
             <li>Ensure compatibility with different devices.</li>
+            <li>Improve the app experience through analytics.</li>
+            <li>Support our services through advertising.</li>
         </ul>
 
         <h2>4. Data Sharing and Security</h2>
-        <p>- We <strong>do not</strong> share your data with third parties.</p>
-        <p>- The app does not track your activities or store personal data.</p>
+        <p>- We <strong>do not</strong> share your personal data with third parties.</p>
+        <p>- The app does not track your activities beyond analytics required for app functionality.</p>
         <p>- We implement reasonable security measures to protect any data processed within the app.</p>
 
         <h2>5. Third-Party Services</h2>
@@ -81,7 +95,7 @@
 
         <h2>8. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, you can contact us at:</p>
-        <p><strong>Email:</strong> [Your Contact Email]</p>
+        <p><strong>Email:</strong> <a href="mailto:support@urdutech.xyz">support@urdutech.xyz</a></p>
 
         <footer>
             <p>&copy; <span id="year"></span> Mini-Player. All rights reserved.</p>

@@ -1,109 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Mini-Player</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 15px; /* Added small padding around the container */
-        }
-        h1, h2 {
-            color: #2c3e50;
-            padding: 10px;
-            margin: 0;
-        }
-        p, ul {
-            padding: 10px;
-            margin: 0;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 30px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6200EE" />
+  <title>Privacy Policy - MiniPlayer</title>
+  <style>
+    body {
+      font-family: "Roboto", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+    header {
+      background: #6200EE;
+      color: #fff;
+      padding: 24px 16px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      color: #6200EE;
+      margin-top: 1.4em;
+    }
+    a {
+      color: #2962FF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #f5f5f5;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      padding: 20px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #121212; color: #e0e0e0; }
+      header { background: #BB86FC; color: #000; }
+      h1, h2, h3 { color: #BB86FC; }
+      th { background: #1e1e1e; }
+      td, th { border-color: #333; }
+      a { color: #82b1ff; }
+      footer { border-top-color: #333; color: #aaa; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: November 3, 2025</p>
+  </header>
+  <main>
+    <section>
+      <h2>1. Introduction</h2>
+      <p>Welcome to <strong>MiniPlayer</strong> (“we”, “our”, or “us”). MiniPlayer is a streaming app designed to play online media, IPTV playlists, and custom network streams with features such as DRM, custom headers, and advanced playback configurations.</p>
+      <p>Your privacy matters to us. This Privacy Policy explains how we handle your information when you use the MiniPlayer app.</p>
+    </section>
 
-        <h2>1. Introduction</h2>
-        <p>Mini-Player ("we," "our," or "us") is a simple media player that allows users to stream videos from network links and play locally stored videos. This Privacy Policy explains how we handle your data when you use our app.</p>
+    <section>
+      <h2>2. Information We Collect</h2>
 
-        <h2>2. Information We Collect</h2>
-        <h3>a. Network Streaming Data</h3>
-        <p>- When you stream videos using a network link, the app processes the URL to fetch and play the video.</p>
-        <p>- We do not store, collect, or share these links.</p>
+      <h3>2.1 Information You Provide</h3>
+      <p><strong>Optional IPTV/XIPTV Login Data:</strong> Some IPTV or XIPTV providers may require a username and password to access their playlists. This data is entered by you and belongs to your service provider. MiniPlayer only stores this data <strong>locally on your device</strong> within your saved playlist configuration. It is never uploaded or shared with any third party.</p>
+      <p>The app uses this data solely to make network requests to your IPTV/XIPTV provider to fetch your playlist or stream data.</p>
 
-        <h3>b. Storage Access</h3>
-        <p>- If you choose to play videos from your device, the app requires access to your storage to list and play selected files.</p>
-        <p>- We do not collect, transmit, or store any personal files.</p>
+      <p><strong>Playlists and URLs:</strong> Any media links, M3U, Xtream, or XIPTV playlists you add are also stored locally on your device. We do not collect or upload your playlists or playback URLs.</p>
 
-        <h3>c. Analytics and Advertising</h3>
-        <p>- We may use third-party analytics services to understand app usage and improve performance.</p>
-        <p>- Our app may display ads, and advertising partners may collect anonymized data to serve relevant ads.</p>
+      <h3>2.2 Automatically Collected Information</h3>
+      <p>To ensure app stability and improve performance, MiniPlayer may collect:</p>
+      <ul>
+        <li>Device information (model, OS version)</li>
+        <li>Anonymous usage analytics (via Firebase Analytics)</li>
+        <li>Advertising identifiers (via Google AdMob)</li>
+      </ul>
+      <p>All data is anonymized and cannot personally identify you.</p>
+    </section>
 
-        <h2>3. How We Use Your Information</h2>
-        <p>We use the collected data to:</p>
-        <ul>
-            <li>Provide core app functionality (streaming and playing videos).</li>
-            <li>Ensure compatibility with different devices.</li>
-            <li>Improve the app experience through analytics.</li>
-            <li>Support our services through advertising.</li>
-        </ul>
+    <section>
+      <h2>3. How We Use Information</h2>
+      <ul>
+        <li>To provide and improve app functionality</li>
+        <li>To connect to IPTV/XIPTV servers using locally stored credentials (if required)</li>
+        <li>To analyze usage trends (Firebase Analytics)</li>
+        <li>To display ads (Google AdMob)</li>
+        <li>To detect and fix crashes or performance issues</li>
+      </ul>
+      <p>We never sell, share, or upload your IPTV credentials, playlists, or media data.</p>
+    </section>
 
-        <h2>4. Data Sharing and Security</h2>
-        <p>- We <strong>do not</strong> share your personal data with third parties.</p>
-        <p>- The app does not track your activities beyond analytics required for app functionality.</p>
-        <p>- We implement reasonable security measures to protect any data processed within the app.</p>
+    <section>
+      <h2>4. DRM and Custom Headers</h2>
+      <p>MiniPlayer supports DRM-protected content and custom HTTP headers for secure playback. All such configurations are processed locally and are never transmitted to any MiniPlayer server or third party.</p>
+    </section>
 
-        <h2>5. Third-Party Services</h2>
-        <p>- If you stream videos from third-party websites, their respective privacy policies apply.</p>
-        <p>- We are not responsible for the content, tracking, or data practices of external websites.</p>
+    <section>
+      <h2>5. Advertising and Analytics</h2>
 
-        <h2>6. Your Choices and Permissions</h2>
-        <p>- You can grant or revoke storage access permissions at any time in your device settings.</p>
-        <p>- The app does not require account registration, so no personal information is stored.</p>
+      <h3>5.1 Google AdMob</h3>
+      <p>We use <strong>Google AdMob</strong> to show ads. AdMob may collect device identifiers and usage data to provide personalized or non-personalized ads.</p>
+      <p>Learn more: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+      <p>Opt out of personalized ads: <a href="https://www.google.com/settings/ads" target="_blank">https://www.google.com/settings/ads</a></p>
 
-        <h2>7. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the app or our official page.</p>
+      <h3>5.2 Firebase Analytics</h3>
+      <p>We use <strong>Firebase Analytics</strong> to understand app usage trends. All collected data is anonymous and does not include playlists or login credentials.</p>
+      <p>Learn more: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+    </section>
 
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, you can contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:support@urdutech.xyz">support@urdutech.xyz</a></p>
+    <section>
+      <h2>6. Data Storage and Security</h2>
+      <ul>
+        <li>All IPTV credentials and playlists are stored locally on your device in private app storage.</li>
+        <li>No data is uploaded to our servers.</li>
+        <li>Uninstalling or clearing data deletes all stored information permanently.</li>
+        <li>MiniPlayer uses HTTPS for secure communication with external servers.</li>
+      </ul>
+    </section>
 
-        <footer>
-            <p>&copy; <span id="year"></span> Mini-Player. All rights reserved.</p>
-        </footer>
-    </div>
+    <section>
+      <h2>7. Third-Party Services</h2>
+      <p>MiniPlayer may access external IPTV or streaming sources that have their own privacy policies. We are not responsible for the practices or content of those third-party services.</p>
+    </section>
 
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <section>
+      <h2>8. Children’s Privacy</h2>
+      <p>MiniPlayer is not intended for children under 13. We do not knowingly collect information from children.</p>
+    </section>
+
+    <section>
+      <h2>9. Your Rights and Choices</h2>
+      <ul>
+        <li>Use MiniPlayer without logging in</li>
+        <li>Remove or change IPTV credentials at any time</li>
+        <li>Disable personalized ads in Google settings</li>
+        <li>Clear app data or uninstall to erase all stored data</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy occasionally. The latest version will always be available within the app or on our Google Play listing.</p>
+    </section>
+
+    <section>
+      <h2>11. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+      <p><strong>Email:</strong> <a href="mailto:support@urdutech.xyz">support@urdutech.xyz</a></p>
+    </section>
+
+    <section>
+      <h2>12. Summary Overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>What’s Stored</th>
+            <th>Storage Location</th>
+            <th>Shared With</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IPTV/XIPTV Login</td>
+            <td>Username, Password</td>
+            <td>Local Device Only</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Playlist / Links</td>
+            <td>URLs, M3U/Xtream Data</td>
+            <td>Local Device Only</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>DRM & Custom Headers</td>
+            <td>Local Configuration</td>
+            <td>Local Device Only</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Ads</td>
+            <td>Device ID</td>
+            <td>Google AdMob</td>
+            <td>Yes (Google only)</td>
+          </tr>
+          <tr>
+            <td>Analytics</td>
+            <td>Anonymous Stats</td>
+            <td>Firebase</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Crashes</td>
+            <td>Error Logs (no personal data)</td>
+            <td>Firebase</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 MiniPlayer. All rights reserved.
+  </footer>
 </body>
 </html>

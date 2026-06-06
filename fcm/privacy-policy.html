@@ -1,1 +1,363 @@
-<h2 style="text-align: left;">Privacy Policy</h2><p><span>FCM Client only provides a way to send FCM messages &amp; Notifications using Firebase Cloud Messaging API and doesn't collect any personal data or information. Any details you will provide stay or are saved internally within your device, and are wiped when you close, uninstall, or clear app data. However, the app sends the details as payload to FCM API, Link to Privacy Policy of&nbsp; FCM is given below:&nbsp;</span></p><p><span><a href="https://firebase.google.com/docs/reference/fcm/rest" target="_blank">Privacy and Security in Firebase</a></span></p><p><span>If you have any questions or suggestions, you can tell us in the Review on Google Play.</span></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FCM Client</title>
+  <meta name="description" content="Privacy Policy for FCM Client, an independent developer tool for sending test messages via the Firebase Cloud Messaging HTTP v1 API." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b1020" />
+  <!-- Inline SVG favicon (bell) so the page is fully self-contained for GitHub Pages -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236d8bff' d='M12 2a6 6 0 0 0-6 6v3.586l-1.707 1.707A1 1 0 0 0 5 17h14a1 1 0 0 0 .707-1.707L18 11.586V8a6 6 0 0 0-6-6zm0 20a3 3 0 0 0 2.83-2H9.17A3 3 0 0 0 12 22z'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #0f1630;
+      --panel: rgba(255, 255, 255, 0.04);
+      --panel-border: rgba(255, 255, 255, 0.08);
+      --text: #e8ecf6;
+      --text-dim: #a7b0c8;
+      --text-faint: #6f7a98;
+      --brand: #6d8bff;
+      --brand-2: #8a6dff;
+      --accent: #38e0b0;
+      --danger: #ff7b7b;
+      --radius: 18px;
+      --maxw: 820px;
+      --shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6);
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f7fc;
+        --bg-soft: #eef2fb;
+        --panel: #ffffff;
+        --panel-border: rgba(15, 23, 42, 0.08);
+        --text: #1a2238;
+        --text-dim: #4a5573;
+        --text-faint: #8a93ad;
+        --shadow: 0 24px 60px -28px rgba(31, 45, 90, 0.35);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 88px 24px 120px;
+      text-align: center;
+      background:
+        radial-gradient(1200px 500px at 50% -10%, rgba(109, 139, 255, 0.35), transparent 60%),
+        radial-gradient(800px 400px at 85% 10%, rgba(138, 109, 255, 0.25), transparent 55%),
+        linear-gradient(180deg, var(--bg-soft), var(--bg));
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0; bottom: -1px;
+      height: 80px;
+      background: linear-gradient(180deg, transparent, var(--bg));
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      backdrop-filter: blur(8px);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      animation: rise 0.6s ease both;
+    }
+
+    .app-mark {
+      width: 76px; height: 76px;
+      margin: 28px auto 20px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, var(--brand), var(--brand-2));
+      box-shadow: 0 18px 40px -14px rgba(109, 139, 255, 0.65);
+      animation: rise 0.6s 0.05s ease both;
+    }
+    .app-mark svg { width: 40px; height: 40px; fill: #fff; }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 6vw, 46px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(180deg, var(--text), var(--text-dim));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rise 0.6s 0.1s ease both;
+    }
+
+    .hero p.lede {
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--text-dim);
+      font-size: clamp(15px, 2.4vw, 18px);
+      animation: rise 0.6s 0.15s ease both;
+    }
+
+    .meta-row {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      animation: rise 0.6s 0.2s ease both;
+    }
+    .pill {
+      font-size: 13px;
+      color: var(--text-dim);
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+    .pill strong { color: var(--text); font-weight: 600; }
+
+    /* ---------- Layout ---------- */
+    main {
+      max-width: var(--maxw);
+      margin: -70px auto 0;
+      padding: 0 20px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .highlight {
+      background: linear-gradient(145deg, rgba(56, 224, 176, 0.12), rgba(109, 139, 255, 0.08));
+      border-color: rgba(56, 224, 176, 0.28);
+    }
+
+    section { scroll-margin-top: 24px; }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 0 0 14px;
+    }
+    h2 .ico {
+      flex: none;
+      width: 34px; height: 34px;
+      border-radius: 10px;
+      display: grid; place-items: center;
+      background: linear-gradient(145deg, rgba(109,139,255,0.2), rgba(138,109,255,0.18));
+      border: 1px solid var(--panel-border);
+    }
+    h2 .ico svg { width: 18px; height: 18px; stroke: var(--brand); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    p { margin: 0 0 14px; color: var(--text-dim); }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); font-weight: 600; }
+
+    ul { margin: 0 0 4px; padding-left: 0; list-style: none; }
+    ul li {
+      position: relative;
+      padding: 8px 0 8px 30px;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--panel-border);
+    }
+    ul li:last-child { border-bottom: 0; }
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 4px; top: 16px;
+      width: 8px; height: 8px;
+      border-radius: 3px;
+      background: linear-gradient(145deg, var(--brand), var(--brand-2));
+    }
+
+    .key-points { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .kp {
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+    }
+    .kp .t { font-weight: 700; color: var(--text); margin-bottom: 4px; font-size: 15px; }
+    .kp .d { font-size: 14px; color: var(--text-faint); }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(145deg, var(--brand), var(--brand-2));
+      box-shadow: 0 14px 30px -12px rgba(109, 139, 255, 0.7);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .contact-btn:hover { transform: translateY(-1px); text-decoration: none; box-shadow: 0 18px 36px -12px rgba(109, 139, 255, 0.8); }
+    .contact-btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 13px;
+    }
+    footer .div { height: 1px; background: var(--panel-border); margin-bottom: 24px; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <span class="badge">Privacy Policy</span>
+    <div class="app-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6v3.586l-1.707 1.707A1 1 0 0 0 5 17h14a1 1 0 0 0 .707-1.707L18 11.586V8a6 6 0 0 0-6-6zm0 20a3 3 0 0 0 2.83-2H9.17A3 3 0 0 0 12 22z"/></svg>
+    </div>
+    <h1>FCM Client Privacy Policy</h1>
+    <p class="lede">An independent developer tool for sending test messages through the Firebase Cloud Messaging HTTP&nbsp;v1 API — built privacy-first, with your credentials kept on your device.</p>
+    <div class="meta-row">
+      <span class="pill"><strong>Effective:</strong> June&nbsp;6,&nbsp;2026</span>
+      <span class="pill"><strong>App:</strong> com.urdutech.fcmclient</span>
+      <span class="pill"><strong>Data collected:</strong> None</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Summary key points -->
+    <section class="card highlight" aria-label="Summary">
+      <div class="key-points">
+        <div class="kp">
+          <div class="t">🔒 On-device only</div>
+          <div class="d">Your Firebase service-account credentials are stored encrypted on your device and never leave it.</div>
+        </div>
+        <div class="kp">
+          <div class="t">🚫 No collection</div>
+          <div class="d">We do not collect personal data, accounts, or analytics about you.</div>
+        </div>
+        <div class="kp">
+          <div class="t">📡 Direct sending</div>
+          <div class="d">Messages go straight from your device to Google's Firebase endpoints.</div>
+        </div>
+        <div class="kp">
+          <div class="t">🗑️ Easy removal</div>
+          <div class="d">Uninstalling the app deletes everything it stored.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="overview">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg></span>Overview</h2>
+      <p><strong>FCM Client</strong> is an independent developer tool for sending test messages through the Firebase Cloud Messaging HTTP&nbsp;v1 API using credentials that <strong>you</strong> supply. It is intended as an operational/testing utility for developers who already own the Firebase projects they connect to.</p>
+      <p>This policy explains what data the app does and does not handle. In short: the app is designed so that your sensitive data stays on your device, and the developer never receives it.</p>
+    </section>
+
+    <section class="card" id="credentials">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>Your Credentials &amp; Data</h2>
+      <p>Your Firebase service account credentials are stored <strong>encrypted on your device only</strong>. They are never uploaded to, collected by, or transmitted to the developer or any third-party server.</p>
+      <p>Messages you compose — along with any drafts, history, templates, and scheduled sends — are stored locally on your device and are sent <strong>directly from your device</strong> to Google's Firebase endpoints. They do not pass through any server operated by the developer.</p>
+      <ul>
+        <li><strong>Service account JSON</strong> — stored encrypted in the app's private storage, used only to authenticate your send requests.</li>
+        <li><strong>Drafts, history &amp; templates</strong> — stored in a local on-device database.</li>
+        <li><strong>Scheduled messages</strong> — held on-device and dispatched by your device at the scheduled time.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="collection">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 4-5"/></svg></span>Information We Do Not Collect</h2>
+      <p>The app does <strong>not</strong> collect personal data or analytics. There is no account sign-up, no tracking of your identity, and no transmission of your message content or credentials to the developer.</p>
+    </section>
+
+    <section class="card" id="ads">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h6M7 13h10"/></svg></span>Advertising</h2>
+      <p>The app may display ads to support development. Ad behavior is controlled remotely and can be disabled at any time — <strong>the app remains fully functional without ads</strong>.</p>
+      <p>If ads are enabled, the <strong>Google AdMob</strong> SDK may collect data in accordance with Google's policies. Please review the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">how Google uses information from sites or apps that use its services</a> for details.</p>
+    </section>
+
+    <section class="card" id="control">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></span>Your Control &amp; Data Deletion</h2>
+      <p>Because all credentials and message data stay on your device, <strong>deleting the app removes them</strong>. You can also remove individual projects, drafts, history entries, templates, and scheduled messages from within the app at any time.</p>
+      <p>You are responsible for the Firebase projects and credentials you use with this tool.</p>
+    </section>
+
+    <section class="card" id="disclaimer">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v6c0 3 4 5 9 5s9-2 9-5V7"/></svg></span>Disclaimer &amp; No Affiliation</h2>
+      <p>FCM Client is an <strong>independent, unofficial tool</strong>. It is not affiliated with, endorsed by, sponsored by, or otherwise associated with Google&nbsp;LLC, Firebase, or Firebase Cloud Messaging.</p>
+      <p>"Google", "Firebase", "Firebase Cloud Messaging", and "FCM" are trademarks of Google&nbsp;LLC. They are used here only to describe the API this tool interacts with. All trademarks are the property of their respective owners.</p>
+      <p>This app is provided "as is", without warranty of any kind. You are solely responsible for the messages you send and for complying with Google's and Firebase's terms of service.</p>
+    </section>
+
+    <section class="card" id="children">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></span>Children's Privacy</h2>
+      <p>FCM Client is a developer utility intended for a general, technical audience and is not directed at children. It does not knowingly collect any information from children.</p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 7"/><path d="M21 3v4h-4"/></svg></span>Changes to This Policy</h2>
+      <p>This policy may be updated from time to time. Material changes will be reflected here with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>Contact</h2>
+      <p>If you have any questions about this Privacy Policy, contact the developer:</p>
+      <a class="contact-btn" href="mailto:support@urdutech.xyz">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
+        support@urdutech.xyz
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="div"></div>
+    <p>© 2026 FCM Client. An independent developer tool — not affiliated with Google LLC or Firebase.</p>
+  </footer>
+</body>
+</html>

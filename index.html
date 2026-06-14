@@ -1,167 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>UrduTech - Coming Soon</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #212121;
-			font-family: 'Montserrat', sans-serif;
-		}
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-			color: #fff;
-		}
-		.logo img {
-			width: 150px;
-			margin-bottom: 20px;
-		}
-		.heading {
-			font-size: 40px;
-			font-weight: 700;
-			margin-bottom: 20px;
-			text-align: center;
-			line-height: 1.1;
-		}
-		.subheading {
-			font-size: 20px;
-			font-weight: 400;
-			margin-bottom: 40px;
-			text-align: center;
-			line-height: 1.5;
-		}
-		.countdown {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			margin-bottom: 60px;
-		}
-		.countdown .box {
-			background-color: rgba(255, 255, 255, 0.1);
-			border-radius: 5px;
-			margin-right: 20px;
-			width: 100px;
-			height: 100px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			font-size: 30px;
-			font-weight: 600;
-			text-align: center;
-			line-height: 1.2;
-			letter-spacing: 2px;
-			color: #fff;
-			border: 2px solid #fff;
-			box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-		}
-		.whatsapp-btn {
-		  height: 20;
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			padding: 10px 20px;
-			border-radius: 50px;
-			background-color: #25d366;
-			color: #000;
-			font-size: 20px;
-			font-weight: 600;
-			text-decoration: none;
-			margin-top: 40px;
-			margin-bottom: 60px;
-			transition: all 0.3s ease-in-out;
-		}
-		.whatsapp-btn:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-		}
-		@media (max-width: 768px) {
-			.heading {
-				font-size: 30px;
-			}
-			.subheading {
-				font-size: 18px;
-			}
-			.countdown {
-				margin-bottom: 30px;
-			}
-			.countdown .box {
-				margin-right: 10px;
-				width: 80px;
-				height: 80px;
-				font-size: 24px;
-				line-height: 1;
-				border-width: 1px;
-				box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-			}
-			.whatsapp-btn {
-				font-size: 18px;
-				padding: 10px 15px;
-				margin-top: 30px;
-			}
-		}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrduTech — Android App Developer & Studio</title>
+  <meta name="description" content="UrduTech builds fast, lightweight Android apps — video & IPTV players, social downloaders, sports utilities, and developer tools. Explore our apps on Google Play." />
+  <meta name="theme-color" content="#0d0d10" />
+  <meta name="author" content="UrduTech" />
+  <link rel="canonical" href="https://urdutech.xyz/" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="UrduTech" />
+  <meta property="og:title" content="UrduTech — Android App Developer & Studio" />
+  <meta property="og:description" content="Fast, lightweight Android apps — players, downloaders, sports utilities, and developer tools. Explore our work on Google Play." />
+  <meta property="og:url" content="https://urdutech.xyz/" />
+  <meta property="og:image" content="https://urdutech.xyz/logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="UrduTech — Android App Developer & Studio" />
+  <meta name="twitter:description" content="Fast, lightweight Android apps. Explore our work on Google Play." />
+  <meta name="twitter:image" content="https://urdutech.xyz/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "UrduTech",
+    "url": "https://urdutech.xyz/",
+    "logo": "https://urdutech.xyz/logo.png",
+    "email": "support@urdutech.xyz",
+    "description": "Independent Android development studio building fast, lightweight apps for Google Play.",
+    "sameAs": [
+      "https://play.google.com/store/apps/developer?id=UrduTech",
+      "https://whatsapp.com/channel/0029VbC5ej8InlqX09BzWj0i"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a href="#apps" class="skip-link" style="position:absolute;left:-9999px;top:0;background:#fff;color:#000;padding:8px 14px;z-index:999;border-radius:0 0 8px 0;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to apps</a>
 
-	<div class="container">
-		<div class="logo">
-			<img src="logo.png" alt="Logo">
-		</div>
-		<h1 class="heading">UrduTech is Coming Soon</h1>
-		<p class="subheading">We're working hard to bring you something special. Stay tuned!</p>
-		<div class="countdown">
-			<div class="box" id="days">00</div>
-			<div class="box" id="hours">00</div>
-			<div class="box" id="minutes">00</div>
-			<div class="box" id="seconds">00</div>
-		</div>
-		<a href="https://wa.me/message/2AUE2RS7LM53K1" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i><span style="margin-left: 5px;">WhatsApp</span></a>
-		<span id="timer"></span>
-	</div>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <a href="#top" class="brand" aria-label="UrduTech home">
+        <img src="logo.png" alt="UrduTech logo" width="38" height="38" />
+        <span>UrduTech</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#apps">Apps</a>
+        <a href="#clients">Client Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://play.google.com/store/apps/developer?id=UrduTech" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Google Play</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-	<script type="text/javascript">
-		// Set the date we're counting down to
-		var countDownDate = new Date("May 31, 2023 00:00:00").getTime();
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-glow g1"></div>
+      <div class="hero-glow g2"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <h1 data-hero>I build Android apps<br />people <span class="text-grad">actually use</span>.</h1>
+          <p class="lede" data-hero>UrduTech is an independent studio crafting fast, lightweight apps — from IPTV players and social downloaders to sports utilities and developer tools.</p>
+          <div class="hero-actions" data-hero>
+            <a href="#apps" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              Explore my apps
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <a href="#apps" class="hero-scroll" aria-label="Scroll to apps">
+        <span class="mouse"></span>
+        Scroll
+      </a>
+    </section>
 
-		// Update the count down every 1 second
-		var x = setInterval(function() {
+    <!-- APPS -->
+    <section class="apps" id="apps">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">The work</span>
+          <h2>Apps shipped to <span class="text-grad">Google Play</span></h2>
+          <p>A growing lineup of focused, no-nonsense Android apps — each built to do one thing well.</p>
+        </div>
+        <div class="apps-grid" id="appsGrid" aria-live="polite"></div>
+      </div>
+    </section>
 
-		  // Get today's date and time
-		  var now = new Date().getTime();
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat" data-reveal="scale" style="--reveal-delay:0ms">
+            <div class="num" data-count="9" data-suffix="+">0</div>
+            <div class="label">Apps shipped</div>
+          </div>
+          <div class="stat" data-reveal="scale" style="--reveal-delay:90ms">
+            <div class="num" data-count="5" data-suffix="">0</div>
+            <div class="label">Own products live</div>
+          </div>
+          <div class="stat" data-reveal="scale" style="--reveal-delay:180ms">
+            <div class="num" data-count="4" data-suffix="">0</div>
+            <div class="label">Client apps delivered</div>
+          </div>
+          <div class="stat" data-reveal="scale" style="--reveal-delay:270ms">
+            <div class="num" data-count="2" data-suffix="">0</div>
+            <div class="label">Brands served</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		  // Find the distance between now and the count down date
-		  var distance = countDownDate - now;
+    <!-- CLIENT WORK -->
+    <section class="clients" id="clients">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Client work</span>
+          <h2>Apps built for <span class="text-grad">other studios</span></h2>
+          <p>Beyond my own products, I design and develop apps for clients — shipped under their own Google Play publishers.</p>
+        </div>
+        <div class="pub-bar" data-reveal="fade">
+          <a class="pub-pill" href="https://play.google.com/store/apps/developer?id=MobilesWorld" target="_blank" rel="noopener">
+            MobilesWorld
+            <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="pub-pill" href="https://play.google.com/store/apps/developer?id=DVS+Tech+Solutions" target="_blank" rel="noopener">
+            DVS Tech Solutions
+            <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+        <div class="apps-grid" id="clientsGrid" aria-live="polite"></div>
+      </div>
+    </section>
 
-		  // Time calculations for days, hours, minutes and seconds
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" data-reveal>
+            <div class="about-ring r1"></div>
+            <div class="about-ring r2"></div>
+            <div class="about-ring r3"></div>
+            <img src="logo.png" alt="UrduTech logo" width="220" height="220" />
+          </div>
+          <div class="about-body">
+            <span class="eyebrow" data-reveal>About</span>
+            <h2 data-reveal>A one-person studio with a <span class="text-grad">ship-it</span> mindset.</h2>
+            <p data-reveal>UrduTech is an independent Android developer based in Pakistan. I design, build, and maintain every app end to end — obsessing over small download sizes, smooth performance on low-end devices, and clean, distraction-free interfaces.</p>
+            <p data-reveal>From streaming players and social media downloaders to cricket companions and developer utilities, the goal is always the same: useful apps that load fast and just work.</p>
+            <div class="stack" data-reveal>
+              <span class="chip">Android</span>
+              <span class="chip">Java</span>
+              <span class="chip">Kotlin</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">FCM</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">Material Design</span>
+              <span class="chip">PHP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		  // Display the result in the element with id="timer"
-		  document.getElementById("days").innerHTML = days;
-		  document.getElementById("hours").innerHTML = hours;
-		  document.getElementById("minutes").innerHTML = minutes;
-		  document.getElementById("seconds").innerHTML = seconds;
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <div class="hero-glow g1"></div>
+          <h2>Let's build something<br /><span class="text-grad">worth installing.</span></h2>
+          <p>Have an app idea, a client project, or a question about one of my apps? For business enquiries, reach out — I'm one message away.</p>
+          <div class="contact-actions">
+            <a href="mailto:business@urdutech.xyz" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              business@urdutech.xyz
+            </a>
+            <a href="https://wa.me/message/2AUE2RS7LM53K1" target="_blank" rel="noopener" class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.7-.8c.2-.3.4-.2.6-.1l1.7.8c.3.1.4.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-		  // If the count down is finished, write some text
-		  if (distance < 0) {
-		    clearInterval(x);
-		    document.getElementById("timer").innerHTML = "EXPIRED";
-		  }
-		}, 1000);
-	</script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand"><img src="logo.png" alt="UrduTech logo" width="38" height="38" /><span>UrduTech</span></a>
+          <p>Independent Android development studio. Fast, lightweight apps — shipped to Google Play.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="#apps">Apps</a>
+            <a href="#clients">Client Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="mailto:business@urdutech.xyz">business@urdutech.xyz</a>
+            <a href="mailto:support@urdutech.xyz">support@urdutech.xyz</a>
+            <a href="https://wa.me/message/2AUE2RS7LM53K1" target="_blank" rel="noopener">WhatsApp Chat</a>
+            <a href="https://whatsapp.com/channel/0029VbC5ej8InlqX09BzWj0i" target="_blank" rel="noopener">WhatsApp Channel</a>
+          </div>
+          <div class="footer-col">
+            <h4>Apps</h4>
+            <a href="https://play.google.com/store/apps/details?id=com.urdutech.miniplayer" target="_blank" rel="noopener">Mini Player</a>
+            <a href="https://play.google.com/store/apps/details?id=com.urdutech.threader" target="_blank" rel="noopener">Threader</a>
+            <a href="https://play.google.com/store/apps/details?id=com.urdutech.snacker" target="_blank" rel="noopener">Snacker</a>
+            <a href="https://play.google.com/store/apps/details?id=com.urdutech.psltime" target="_blank" rel="noopener">PSL 2025</a>
+            <a href="https://play.google.com/store/apps/details?id=com.urdutech.fcmclient" target="_blank" rel="noopener">FCM Client</a>
+          </div>
+          <div class="footer-col">
+            <h4>Privacy</h4>
+            <a href="mini-player/privacy-policy.html">Mini Player</a>
+            <a href="threader/privacy-policy.html">Threader</a>
+            <a href="snacker/privacy-policy.html">Snacker</a>
+            <a href="psltime/privacy-policy.html">PSL 2025</a>
+            <a href="fcm/privacy-policy.html">FCM Client</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> UrduTech. All rights reserved.</span>
+        <span>Built with care · <a href="https://play.google.com/store/apps/developer?id=UrduTech" target="_blank" rel="noopener" style="color:var(--text-dim)">UrduTech on Google Play</a></span>
+      </div>
+    </div>
+  </footer>
 
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>

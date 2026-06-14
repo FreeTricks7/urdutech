@@ -1,0 +1,119 @@
+{
+  "apps": [
+    {
+      "slug": "miniplayer",
+      "name": "Mini Player",
+      "subtitle": "Streaming IPTV",
+      "tagline": "A lightweight, gesture-driven player for IPTV streams and local video — tuned to run smooth on low-end devices.",
+      "category": "Video & IPTV",
+      "icon": "assets/img/apps/miniplayer.png",
+      "accent": "#ff6b3d",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.urdutech.miniplayer",
+      "privacyUrl": "mini-player/privacy-policy.html",
+      "featured": true,
+      "status": "live"
+    },
+    {
+      "slug": "threader",
+      "name": "Threader",
+      "subtitle": "Threads Downloader",
+      "tagline": "Save videos, photos, and audio from Threads in a single tap — fast, clean, no clutter.",
+      "category": "Downloader",
+      "icon": "assets/img/apps/threader.png",
+      "accent": "#c850ff",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.urdutech.threader",
+      "privacyUrl": "threader/privacy-policy.html",
+      "featured": true,
+      "status": "live"
+    },
+    {
+      "slug": "snacker",
+      "name": "Snacker",
+      "subtitle": "Video Downloader",
+      "tagline": "Grab and store your favourite videos for offline watching, anytime.",
+      "category": "Downloader",
+      "icon": "assets/img/apps/snacker.png",
+      "accent": "#ff4d6d",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.urdutech.snacker",
+      "privacyUrl": "snacker/privacy-policy.html",
+      "featured": false,
+      "status": "live"
+    },
+    {
+      "slug": "psltime",
+      "name": "PSL 2025",
+      "subtitle": "Schedule & Squads",
+      "tagline": "Live scores, the full match schedule, and complete squads for the Pakistan Super League.",
+      "category": "Sports",
+      "icon": "assets/img/apps/psltime.png",
+      "accent": "#2ecc71",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.urdutech.psltime",
+      "privacyUrl": "psltime/privacy-policy.html",
+      "featured": false,
+      "status": "live"
+    },
+    {
+      "slug": "fcmclient",
+      "name": "FCM Client",
+      "subtitle": "Push Tester",
+      "tagline": "Send and debug Firebase Cloud Messaging push notifications in seconds — a handy tool for developers.",
+      "category": "Developer Tools",
+      "icon": "assets/img/apps/fcmclient.png",
+      "accent": "#3d9bff",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.urdutech.fcmclient",
+      "privacyUrl": "fcm/privacy-policy.html",
+      "featured": false,
+      "status": "live"
+    }
+  ],
+  "clients": [
+    {
+      "slug": "tikvid",
+      "name": "TikVid",
+      "subtitle": "TikTok Downloader",
+      "tagline": "No-watermark TikTok video downloader with a fast, friendly interface.",
+      "category": "Downloader",
+      "icon": "assets/img/clients/tikvid.png",
+      "accent": "#25d0c0",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.desicoder.tikdown",
+      "publisher": "MobilesWorld",
+      "publisherUrl": "https://play.google.com/store/apps/developer?id=MobilesWorld"
+    },
+    {
+      "slug": "uchub",
+      "name": "UC Hub",
+      "subtitle": "Earn Rewards",
+      "tagline": "A rewards app where users complete tasks to earn redeemable points.",
+      "category": "Rewards",
+      "icon": "assets/img/clients/uchub.png",
+      "accent": "#ffb02e",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.app.uchub",
+      "publisher": "DVS Tech Solutions",
+      "publisherUrl": "https://play.google.com/store/apps/developer?id=DVS+Tech+Solutions"
+    },
+    {
+      "slug": "nikavpn",
+      "name": "Nika VPN",
+      "subtitle": "Secure & Fast VPN",
+      "tagline": "A simple, fast VPN client for private, unrestricted browsing.",
+      "category": "Tools",
+      "icon": "assets/img/clients/nikavpn.png",
+      "accent": "#4d7cff",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.shehzad.nikavpn",
+      "publisher": "DVS Tech Solutions",
+      "publisherUrl": "https://play.google.com/store/apps/developer?id=DVS+Tech+Solutions"
+    },
+    {
+      "slug": "dvsstickers",
+      "name": "DVS Stickers Maker",
+      "subtitle": "WhatsApp Stickers",
+      "tagline": "Create and share custom WhatsApp sticker packs from your own images.",
+      "category": "Tools",
+      "icon": "assets/img/clients/dvsstickers.png",
+      "accent": "#ff5e8a",
+      "playUrl": "https://play.google.com/store/apps/details?id=com.stickersmaker.dvs",
+      "publisher": "DVS Tech Solutions",
+      "publisherUrl": "https://play.google.com/store/apps/developer?id=DVS+Tech+Solutions"
+    }
+  ]
+}
